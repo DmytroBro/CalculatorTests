@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Demo Suite">
+    <listeners>
+        <listener class-name="Listeners.TestListeners"/>
+    </listeners>
+    <test name="Sub Calc Test">
+        <classes>
+            <class name="tests.SubCalcTest"/>
+        </classes>
+    </test>
+    <test name="Sum Calc Test">
+        <classes>
+            <class name="tests.SumCalcTest"/>
+        </classes>
+    </test>
+    <test name="Divide Calc Test">
+        <classes>
+            <class name="tests.DivCalcTest"/>
+        </classes>
+    </test>
+    <test name="Summing array with data provider">
+        <classes>
+            <class name="tests.SummingDataProvider"/>
+        </classes>
+    </test>
+</suite>
